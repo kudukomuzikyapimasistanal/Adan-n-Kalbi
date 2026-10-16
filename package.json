@@ -1,0 +1,20 @@
+{
+  "name": "adanin-kalbi",
+  "version": "1.0.0",
+  "description": "Adanın Kalbi - survival oyunu",
+  "main": "main.js",
+  "author": "Adanin Kalbi",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "dependencies": { "three": "0.128.0" },
+  "devDependencies": { "electron": "^31.0.0", "electron-builder": "^24.13.3" },
+  "build": {
+    "appId": "com.adaninkalbi.game",
+    "productName": "Adanin Kalbi",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "index.html", "lib/**"],
+    "win": { "target": "portable" }
+  }
+}
